@@ -1,6 +1,6 @@
 # Spatial Clearances and Ergonomics
 
-> Sources: Neufert *Architects' Data* (current ed., publisher Wiley-Blackwell), *Time-Saver Standards for Interior Design and Space Planning* (Reznikoff / De Chiara, McGraw-Hill), *Human Dimension & Interior Space* (Panero & Zelnik, Whitney Library of Design 1979), Henry Dreyfuss Associates *The Measure of Man and Woman*, Edward T. Hall *The Hidden Dimension* (Doubleday 1966), GB 50096-2011 *Design Code for Residential Buildings*, U.S. Access Board ADA Standards (2010), NKBA Kitchen & Bath Planning Guidelines.
+> Sources: Neufert *Architects' Data* (current ed., publisher Wiley-Blackwell), *Time-Saver Standards for Interior Design and Space Planning* (Reznikoff / De Chiara, McGraw-Hill), *Human Dimension & Interior Space* (Panero & Zelnik, Whitney Library of Design 1979), Henry Dreyfuss Associates *The Measure of Man and Woman*, Edward T. Hall *The Hidden Dimension* (Doubleday 1966), GB 50096-2011 *Design Code for Residential Buildings*, Permen PUPR 14/PRT/M/2017 (Persyaratan Kemudahan Bangunan Gedung), NKBA Kitchen & Bath Planning Guidelines.
 >
 > Last updated: 2026-04-29
 
@@ -43,21 +43,20 @@ The audience is twofold: an automated checker that flags placement violations (e
 
 ### Bathroom
 
-- **Toilet centerline from side wall:** 406-457 mm / 16-18 in (per U.S. Access Board ADA Guide Chapter 6, https://www.access-board.gov/ada/guides/chapter-6-toilet-rooms/; specifying 432 mm / 17 in tolerates ±25 mm construction variation). For non-accessible residential, GB 50096-2011 permits 380 mm minimum — see `codes.md`.
-- **Clear floor space at water closet:** 1524 mm wide × 1422 mm deep minimum (60 in × 56 in) (per ADA Guide Chapter 6, https://www.access-board.gov/ada/guides/chapter-6-toilet-rooms/). For floor-mounted units in compartments, depth increases to 1499 mm / 59 in.
-- **Lavatory clear floor space (forward approach):** 762 × 1219 mm / 30 × 48 in (per ADA Guide Chapter 6, https://www.access-board.gov/ada/guides/chapter-6-toilet-rooms/).
-- **Lavatory overlap exception (residential):** the lavatory may overlap the water-closet clearance if water-closet depth is increased to 1676 mm / 66 in (per ADA Guide Chapter 6).
-- **Toilet seat height:** 430 mm / 17 in minimum top-of-seat to floor (per ADA Standards 2010 §604, https://en.wikipedia.org/wiki/Accessible_toilet).
+- **Accessible toilet compartment:** 1525 × 2275 mm minimum (per Permen PUPR 14/PRT/M/2017 Lampiran III 5.8), with 1525 mm clear between the door and the front of the water closet (per Permen PUPR 14/PRT/M/2017 Lampiran III 5.11) — see `codes.md`.
+- **General toilet compartment:** 800 × 1550 mm minimum (per Permen PUPR 14/PRT/M/2017 Lampiran III 5.7).
+- **Wash basin height:** 750 mm for wheelchair users, 850 mm for adults (per Permen PUPR 14/PRT/M/2017 Lampiran III 6.3–6.4).
+- **Toilet centerline from side wall and seat height:** not specified numerically in Permen PUPR 14/PRT/M/2017 Lampiran III; take them from the fixture manufacturer's accessible-WC data and the in-force SNI or hospital standard (perlu verifikasi) rather than a foreign code.
 
 ## Circulation widths
 
 | Path type | Width (mm) | Source |
 |---|---|---|
-| Primary residential corridor | 910 minimum | per https://en.wikipedia.org/wiki/Hallway citing U.S. residential design practice |
+| Primary residential corridor | 920 minimum (one wheelchair user) | per Permen PUPR 14/PRT/M/2017 Lampiran II A.3.a |
 | Secondary / single-person path | 760-900 | per Panero & Zelnik 1979 body-pass-by — exact figure number not verified, cf. https://en.wikipedia.org/wiki/Proxemics |
 | Two-person passing | 1200 | per NKBA two-cook aisle (https://en.wikipedia.org/wiki/Kitchen_work_triangle), used as residential analog |
-| Accessibility-grade route | 915 minimum, 1525 turning circle | per ADA / Universal Design (https://en.wikipedia.org/wiki/Universal_design); see `codes.md` for the full ADA citation |
-| Wheelchair turning space | 1524 × 1524 | per https://en.wikipedia.org/wiki/Universal_design and ADA Guide Chapter 6 |
+| Accessibility-grade route | 920 minimum (one wheelchair), 1520 wheelchair + pedestrian, 1840 two wheelchairs | per Permen PUPR 14/PRT/M/2017 Lampiran II A.3.a; see `codes.md` |
+| Wheelchair manoeuvring space at a door | 1525 × 1525 inside, 1700 × 1700 outside | per Permen PUPR 14/PRT/M/2017 Lampiran II A.1.a.6–7 |
 
 ## Eye-level conventions
 
@@ -114,7 +113,7 @@ Hall's 1966 framework gives the load-bearing numbers for any seating arrangement
 
 ## See also
 
-- `codes.md` — regulatory minimums (GB 50096, GB 50763 accessibility, ADA), which often set the floor below which the values here cannot drop.
+- `codes.md` — Indonesian regulatory minimums (Permen PUPR 14/PRT/M/2017 accessibility, Permen PU 26/PRT/M/2008 egress), which often set the floor below which the values here cannot drop.
 - `furniture.md` — standard furniture footprints that drive these clearances.
 - `camera.md` — render-camera height and lens choice; the eye-level table above ties directly into camera placement.
 - `lighting.md` — fixture mounting heights also reference eye level.

@@ -1,6 +1,6 @@
 # Acoustics for Interior Design
 
-> Sources: GB 50118-2010 民用建筑隔声设计规范 (Code for design of sound insulation of civil buildings), ASTM E90 (transmission loss test method), ASTM E413 (Sound Transmission Class), ASTM C423 (sound absorption test), NRC reference tables (Acoustical Surfaces, Commercial Acoustics), Beranek L.L. — *Concert Halls and Opera Houses: Music, Acoustics, and Architecture* (Springer, 2nd ed. 2004), International Building Code 2021 §1206.
+> Sources: GB 50118-2010 民用建筑隔声设计规范 (Code for design of sound insulation of civil buildings), ASTM E90 (transmission loss test method), ASTM E413 (Sound Transmission Class), ASTM C423 (sound absorption test), NRC reference tables (Acoustical Surfaces, Commercial Acoustics), Beranek L.L. — *Concert Halls and Opera Houses: Music, Acoustics, and Architecture* (Springer, 2nd ed. 2004). Indonesian sound-insulation requirements: check the in-force SNI and, for hospitals, the Kemenkes environmental-health noise limits (perlu verifikasi); no US building-code values are used.
 > Last updated: 2026-04-29
 
 ## Purpose
@@ -52,14 +52,14 @@ Rule of thumb: if the room is more than ~70% **NRC ≤ 0.10** surfaces by visibl
 
 | Partition / wall | Min STC | Source |
 |---|---|---|
-| Residential party wall (between dwelling units) | **STC 50** (lab) / NIC 45 (field) | (per IBC 2021 §1206; ASTM E413; LA Municipal Code §91.1206 corroborates) |
-| Residential party floor/ceiling | **STC 50** + IIC 50 (impact) | (per IBC 2021 §1206) |
+| Residential party wall (between dwelling units) | **STC 50** (lab) / NIC 45 (field) | (per GB 50118-2010 §4.2.1 comparison value, Rw+C ≥ 45 dB ≈ STC 50; ASTM E413 rating method — not an Indonesian requirement) |
+| Residential party floor/ceiling | **STC 50** + IIC 50 (impact) | (per GB 50118-2010 §4.2 comparison values — not an Indonesian requirement) |
 | China — residential party wall/floor | **Rw + C ≥ 45 dB** (mandatory) | (per GB 50118-2010 §4.2.1, §4.2.2 — mandatory clauses) |
-| Hotel guest room partition | **STC 50+** | (per IBC 2021 §1206 — hotels treated as dwelling units) |
-| Hotel corridor entry door | **STC 26+** with perimeter seal | (per LA Municipal Code §91.1206; IBC 2021) |
+| Hotel guest room partition | **STC 50+** | (per GB 50118-2010 hotel chapter comparison values — not an Indonesian requirement) |
+| Hotel corridor entry door | **STC 26+** with perimeter seal | (per industry practice; cf. GB 50118-2010 hotel door values) |
 | Office demising wall (general) | STC 35–45 | (per industry practice; ASTM E413 commentary) |
 | Office speech-privacy wall (HR, exec) | STC 45–50 | (per industry practice; STC standard contour) |
-| Hospital / studio sensitive partition | STC 55+ | (per industry practice; IBC sensitive-use guidance) |
+| Hospital / studio sensitive partition | STC 55+ | (per industry practice; cf. GB 50118-2010 hospital chapter) |
 
 **Caveat (per ASTM E413):** STC is calibrated against speech spectra and does NOT predict isolation from low-frequency sources (subwoofers, HVAC rumble, traffic). For those, specify Rw + Ctr or do a banded analysis.
 
@@ -71,7 +71,7 @@ Rule of thumb: if the room is more than ~70% **NRC ≤ 0.10** surfaces by visibl
 | Cafe / bar with music program | 0.6–1.0 s | (per restaurant acoustic design references; Beranek 2004 speech vs. music trade-off) |
 | Open-plan office | 0.4–0.6 s | (per WELL Standard; commercial-acoustics guidance) |
 | Private office, meeting room | 0.5–0.7 s | (per Phonotech tertiary-sector benchmark ~0.77 s; WELL) |
-| Classroom (speech-critical) | 0.4–0.6 s | (per ANSI S12.60 referenced in Acoustical Society of America guidance) |
+| Classroom (speech-critical) | 0.4–0.6 s | (per GB 50118-2010 school-building comparison values and Beranek speech-intelligibility guidance) |
 | Residential living room | 0.4–0.6 s | (per industry practice; commercial-acoustics) |
 | Concert hall (symphonic, occupied) | 1.8–2.2 s @ 500–1000 Hz | (per Beranek 2004, *Concert Halls and Opera Houses* Ch. 4 + appendix data tables) |
 | Opera house (occupied) | 1.4–1.8 s | (per Beranek 2004) |
@@ -88,7 +88,7 @@ Coverage matters as much as panel NRC: an NRC-0.90 panel covering 15% of room su
 3. **Soft furniture density** — upholstered banquettes, fabric chairs, heavy drapes contribute meaningfully: an occupied upholstered seat absorbs roughly the same as a 0.5 m² acoustic panel (per Beranek 2004, audience absorption tables). For a dense-seating cafe, this can carry 30–40% of the absorption budget.
 4. **Carpet or rug on floor** — drops floor NRC from 0.10 (hardwood) to 0.30–0.55 (carpet on pad). For a hard-floor design (SPC plank, polished concrete, etc.), use **area rugs under banquette zones** — captures most of the acoustic benefit without losing the design intent (per Commercial Acoustics flooring values).
 5. **Bookshelves with irregular contents** — diffusion + mid-frequency absorption; cheap and visually consistent with speakeasy aesthetic.
-6. **For STC (between rooms), not NRC:** mass + decoupling + sealed perimeter. Double-stud wall with mineral wool + resilient channels reaches STC 55–60; a single layer of 12 mm gypsum on wood studs is only ~STC 33 (per IBC §1206 commentary; ASTM E90 test data).
+6. **For STC (between rooms), not NRC:** mass + decoupling + sealed perimeter. Double-stud wall with mineral wool + resilient channels reaches STC 55–60; a single layer of 12 mm gypsum on wood studs is only ~STC 33 (per ASTM E90 test data).
 
 ## Worked examples
 
@@ -96,7 +96,7 @@ Coverage matters as much as panel NRC: an NRC-0.90 panel covering 15% of room su
 Floor SPC plank (NRC 0.10), painted plaster walls (0.05), exposed concrete ceiling (0.02), large glass storefront (0.05), wood bar top (0.10). Total absorption: very low → estimated RT60 ~ 1.7 s untreated. Add: ceiling cloud panels at NRC 0.85 covering 30% of 70 m² ceiling = 21 m² absorptive ceiling, plus fabric-back banquettes along one wall. Predicted occupied RT60: **~0.6 s** — speech-friendly (per Sabine equation; Beranek 2004 Ch. 4).
 
 **Example 2 — Apartment bedroom shared wall to neighbor.**
-Existing: single-layer 12 mm gypsum on 90 mm wood studs, no insulation → STC ~33 (loud TV clearly audible). Required by IBC 2021 §1206 / GB 50118-2010 §4.2.1: STC 50 / Rw+C ≥ 45 dB. Fix: add 50 mm mineral wool in cavity, add resilient channels + second layer 12 mm gypsum, seal perimeter with acoustic sealant → STC ~52–55 (per ASTM E90 test data for similar assemblies).
+Existing: single-layer 12 mm gypsum on 90 mm wood studs, no insulation → STC ~33 (loud TV clearly audible). Target per GB 50118-2010 §4.2.1 as a comparison value: Rw+C ≥ 45 dB (≈ STC 50); confirm any Indonesian requirement for the project (perlu verifikasi). Fix: add 50 mm mineral wool in cavity, add resilient channels + second layer 12 mm gypsum, seal perimeter with acoustic sealant → STC ~52–55 (per ASTM E90 test data for similar assemblies).
 
 ## Common mistakes
 
@@ -104,11 +104,11 @@ Existing: single-layer 12 mm gypsum on 90 mm wood studs, no insulation → STC ~
 2. **Open-plan office without NRC ceiling.** Drop ceiling at NRC 0.50 is the floor-level minimum, not the target — target NRC 0.80+ (per Commercial Acoustics — *Open offices*). Speech privacy in open plan also requires sound masking, not just absorption.
 3. **Confusing STC with NRC.** Putting fabric panels on a thin wall does NOT make it STC-rated — that requires mass and decoupling. NRC fixes echoes inside a room; STC blocks sound from leaving it.
 4. **Chasing NRC 0.95 over coverage area.** A 0.95 panel at 10% coverage loses to a 0.80 panel at 30% coverage (per Commercial Acoustics — *Coverage area matters more than the individual panel NRC*).
-5. **Ignoring flanking paths.** A great STC-55 wall with an under-door gap, an unsealed electrical outlet box, or HVAC ducting that bridges both rooms performs at STC ~35 in the field. Field-measured NIC is typically 5+ points below lab STC for this reason (per IBC 2021 §1206 lab-vs-field clause).
+5. **Ignoring flanking paths.** A great STC-55 wall with an under-door gap, an unsealed electrical outlet box, or HVAC ducting that bridges both rooms performs at STC ~35 in the field. Field-measured NIC is typically 5+ points below lab STC for this reason (per ASTM E336 field vs. ASTM E90 lab test practice).
 
 ## See also
 
 - `materials.md` — material choice impacts NRC; specifies finish products with absorption data.
 - `space-types/restaurant.md`, `space-types/office.md`, `space-types/residential.md` — per-space acoustic priorities and targets.
-- `codes.md` — full GB 50118-2010 + IBC §1206 cross-reference, including impact-noise (IIC) requirements not covered here.
+- `codes.md` — Indonesian regulatory backbone (accessibility and egress); acoustic requirements are not yet covered there.
 - `lighting.md` — secondary: hard reflective ceilings affect both light bounce and acoustic reflection; coordinated treatment.

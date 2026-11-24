@@ -2,7 +2,7 @@
 
 > **The AI designer for people who don't know design.**
 >
-> Atelier is an end-to-end interior design workflow toolkit. You bring rough direction and "I like this / I don't like this" feedback. Atelier brings a 39-chapter design handbook (every numeric value cited to GB / IES / Neufert / Disney BSDF / named publications), 19 published-project-cited style chapters, 9-dimension quality gates that refuse to render scenes that read as plastic, and full Blender MCP integration so the AI can actually build the 3D scene.
+> Atelier is an end-to-end interior design workflow toolkit. You bring rough direction and "I like this / I don't like this" feedback. Atelier brings a 39-chapter design handbook (every numeric value cited to Indonesian regulations (Permen PUPR 14/2017, Permen PU 26/2008) / GB / IES / Neufert / Disney BSDF / named publications), 19 published-project-cited style chapters, 9-dimension quality gates that refuse to render scenes that read as plastic, and full Blender MCP integration so the AI can actually build the 3D scene.
 
 ```text
 You:      "I want my apartment to feel like a Tokyo tea house. Cosy. 60m². Three rooms."
@@ -12,6 +12,9 @@ Atelier:  → 25-question discovery (5 question types, projective + sensory + pa
           → 1688 / Taobao SKU shopping list with photos + prices
           → contractor-ready BoM with handbook citations on every spec
 ```
+
+
+> **Fork note (standar Indonesia):** this fork makes Indonesian regulations the regulatory backbone (`docs/handbook/codes.md`: accessibility per Permen PUPR 14/PRT/M/2017, egress and occupant load per Permen PU 26/PRT/M/2008, hospital notes per Permenkes 6/2026). US building codes (ADA, IBC, IRC, LA Municipal Code, ANSI S12.60) were removed from the handbook. Chinese GB values remain only as comparison data. See `docs/handbook/codes.md` for items still marked *perlu verifikasi*.
 
 ## 🎯 Who it's for
 
@@ -142,7 +145,7 @@ Concrete differences in tool surface (this is current as of v2.5.0+fork.1):
 
 Atelier is composed of four layers — each useful on its own:
 
-1. **The Handbook** — `docs/handbook/` — 39 chapters, 4400+ lines, every numeric value cited to a public source (GB / IES / Neufert / Disney BSDF / IBC / named publications). 19 style chapters cite real published projects (Norm Architects' The Audo, Tadao Ando's Casa Wabi, Pierre Yovanovitch interiors, Death & Co NYC, %Arabica Kyoto, etc.). 8 space-type chapters cover dimensions / clearances / lighting recipes.
+1. **The Handbook** — `docs/handbook/` — 39 chapters, 4400+ lines, every numeric value cited to a public source (Indonesian regulations — Permen PUPR 14/PRT/M/2017, Permen PU 26/PRT/M/2008, Permenkes 6/2026 — plus GB / IES / Neufert / Disney BSDF / named publications). 19 style chapters cite real published projects (Norm Architects' The Audo, Tadao Ando's Casa Wabi, Pierre Yovanovitch interiors, Death & Co NYC, %Arabica Kyoto, etc.). 8 space-type chapters cover dimensions / clearances / lighting recipes.
 2. **5 Claude Skills** — `.claude/skills/interior-*` — discovery-intake, style-locking, plain-language-edit, render-direction, construction-handoff. Each skill explicitly instructs the AI to cite the handbook before applying a rule.
 3. **The Atelier CLI** — `atelier discover|styles|audit|bom|moodboard|handbook` — runs the workflow without any AI client. Pure-Python; same modules the MCP server uses.
 4. **The MCP server** — 80 tools spanning Blender control + asset libraries (PolyHaven, Sketchfab, AmbientCG) + AI 3D generation (Tripo3D, Meshy, Hyper3D, Hunyuan3D) + image gen (OpenAI, Codex CLI) + the interior-design layer (handbook reader, discovery, audit, project scaffold, snapshots, procurement, BoM, moodboard, style-aware furniture placement).

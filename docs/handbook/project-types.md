@@ -1,6 +1,6 @@
 # Project Types and Multi-Space Organization
 
-> Sources: Neufert Architects' Data, 4th ed. (Wiley-Blackwell) chapters Restaurants (pp. 187-189), Administration & Offices, Retail, Hotels & Catering; Time-Saver Standards for Building Types, 3rd ed. (De Chiara & Callender); Time-Saver Standards for Housing and Residential Development (De Chiara, Panero & Zelnik); GB 50352-2019 民用建筑设计统一标准; IBC 2021 Chapter 3 (Use and Occupancy Classification, §303 / §304 / §309 / §310); IBC 2021 Chapter 10 §1004.5 (Occupant Load Factors); Webstaurant Store, Patriquin Architects, RBNH Solutions on FOH/BOH adjacency.
+> Sources: Neufert Architects' Data, 4th ed. (Wiley-Blackwell) chapters Restaurants (pp. 187-189), Administration & Offices, Retail, Hotels & Catering; Time-Saver Standards for Building Types, 3rd ed. (De Chiara & Callender); Time-Saver Standards for Housing and Residential Development (De Chiara, Panero & Zelnik); GB 50352-2019 民用建筑设计统一标准; Permen PU 26/PRT/M/2008 (occupant-load factors and egress; cross-ref `codes.md`); Permen PUPR 14/PRT/M/2017 (accessibility).
 > Last updated: 2026-04-29
 
 ## Purpose
@@ -11,12 +11,12 @@ This chapter answers the question "what spaces does a project of type X need, in
 
 The questionnaire and scaffolder accept exactly these slugs:
 
-- `residential_apartment` — multi-unit dwelling, single floor, shared building envelope (IBC R-2; GB 50096-2011 住宅).
-- `residential_house` — single-family detached or townhouse, owns its envelope (IBC R-3 outside the strict scope of Chapter 3 above; GB 50096-2011 住宅).
-- `cafe_lounge` — small assembly space focused on beverage service with light food (IBC A-2 below the 50-occupant threshold may revert to Group B; verify with AHJ).
-- `restaurant_full_service` — table-service food and drink (IBC A-2 §303).
-- `retail_boutique` — small mercantile space for display + sale of merchandise (IBC M §309).
-- `office_small` — single-tenant workplace, ≤ ~25 workstations (IBC B §304).
+- `residential_apartment` — multi-unit dwelling, single floor, shared building envelope (hunian bertingkat / rumah susun).
+- `residential_house` — single-family detached or townhouse, owns its envelope (rumah tinggal).
+- `cafe_lounge` — small assembly space focused on beverage service with light food (assembly use for occupant load; confirm the building function with the PBG reviewer).
+- `restaurant_full_service` — table-service food and drink (assembly use for occupant load).
+- `retail_boutique` — small mercantile space for display + sale of merchandise (retail sales use for occupant load).
+- `office_small` — single-tenant workplace, ≤ ~25 workstations (business use for occupant load).
 
 Anything outside these six (hotel, school, hospital, factory) is out of scope for v1 and the questionnaire will refuse it.
 
@@ -35,7 +35,7 @@ Anything outside these six (hotel, school, hospital, factory) is out of scope fo
   - laundry (in-unit or shared per local code)
 - **Adjacency:** kitchen ↔ dining adjacent; bedrooms clustered with bathroom(s) on the private side; entry-foyer mediates between corridor and living room (no direct sofa-from-corridor sightline).
 - **Floor area range:** studio 25-37 m²; 1-bedroom 37-50 m²; 2-bedroom 61-77 m² (per UK Nationally Described Space Standard, "Technical Requirements", 2015 — 1B/2P shower 37 m², 1B/2P bath 39 m²; 2B/4P single-storey 70 m²; London Plan best-practice adds 10-14% on top). Catalan Decree 141/2012 sets a 20 m² minimum net for a studio (per "Housing Spaces in Nine European Countries", PMC8073340).
-- **Typical occupant load:** N/A (residential — IBC 2021 §1004.5 lists residential at 200 gross sf/person but life-safety planning for multi-family uses dwelling-unit count, not load factor).
+- **Typical occupant load:** apartment buildings use 18.6 m²/person (per Permen PU 26/PRT/M/2008 Tabel faktor beban hunian; perlu verifikasi); single dwellings are usually planned by bedroom count.
 
 ### residential_house
 
@@ -60,21 +60,21 @@ Anything outside these six (hotel, school, hospital, factory) is out of scope fo
   - host or order counter
   - seating area (mix of tables, banquettes, bar stools)
   - bar / beverage station
-  - restroom(s) (per GB 50352-2019 §6.6 and IBC §2902 — count by occupant load)
+  - restroom(s) (count by occupant load; accessible toilet per Permen PUPR 14/PRT/M/2017 Lampiran III 5.5)
   - back-of-house: prep kitchen, storage, staff
 - **Adjacency:** counter ↔ seating ↔ restroom forms the patron loop; bar ↔ BOH prep is the shortest staff path; restrooms must NOT open directly into the dining floor without a vestibule (per GB 50352-2019 §6.6.4).
 - **Floor area range:** No fixed Neufert range for "café" specifically; Neufert lists café dining-area allowance of less than restaurant ("apart from fast-food outlets, the least space required is in cafés" per Neufert 4th ed., "Restaurants"). Practical band 50-200 m² for a single-room neighborhood café.
-- **Typical occupant load:** 15 net sq ft per person (≈1.4 m²/person) for "Assembly without fixed seats — unconcentrated (tables and chairs)" (per IBC 2021 §1004.5 Table). Standing-only zones: 5 net sq ft (≈0.46 m²/person).
+- **Typical occupant load:** 1.4 m²/person for less-concentrated assembly without fixed seats (per Permen PU 26/PRT/M/2008 Tabel faktor beban hunian; perlu verifikasi). Standing-only zones: 0.65 m² net per person (per Permen PU 26/PRT/M/2008 Tabel faktor beban hunian; perlu verifikasi).
 - **FOH:BOH ratio:** Neufert kitchen-to-place ratios for café-class operations sit around 0.3-0.4 m² kitchen per 1.4-1.6 m² dining seat — i.e. BOH ≈ 20-25% of FOH (per Neufert 4th ed., pp. 187-189 dining-room / kitchen tables). Neufert dining allowance of 1.4-1.6 m²/place applies (standard 1.5).
 
 ### restaurant_full_service
 
-- **Required spaces** (per Neufert 4th ed. "Restaurants" pp. 187-189; IBC §303 A-2 occupancy):
+- **Required spaces** (per Neufert 4th ed. "Restaurants" pp. 187-189):
   - entry vestibule + waiting/host area
   - dining room (Neufert: "the main room of a restaurant is the customers' dining room")
   - bar (optional but common)
   - service stations (water, POS) within FOH
-  - restrooms (separate M/F per code; accessible per ADA / GB 50763-2012)
+  - restrooms (separate M/F per code; accessible per Permen PUPR 14/PRT/M/2017 Lampiran III)
   - BOH: receiving / loading dock, dry storage, refrigerated storage (walk-ins), prep kitchen, hot line, cold line, plating / pass, dish pit / warewashing, staff lockers, office, trash / recycling
 - **Adjacency** (per Webstaurant Store "6 Principles for Layout & Flow" + Patriquin Architects + RBNH Solutions):
   - One-way flow: receiving → storage → prep → cook → plate → pass → dining; dirty dishes return via separate path to dish pit.
@@ -83,12 +83,12 @@ Anything outside these six (hotel, school, hospital, factory) is out of scope fo
   - Two distinct FOH circulation paths: patron flow (entry → host → table → restroom → exit) and waitstaff flow (kitchen → tables → service stations → kitchen). Cross only at controlled handoff points.
   - Raw-protein prep separated from salad / plating (raw vs. cooked separation, per Webstaurant Store).
 - **Floor area range:** Neufert dining allowance 1.4-1.6 m²/seat (standard 1.5); typical 40-80-seat full-service room → 60-130 m² FOH alone, plus BOH per ratio below. Neufert ceiling height: ≤ 50 m² → 2.50 m, > 50 m² → 2.75 m, > 100 m² → 3.00 m (Neufert 4th ed., "Restaurants").
-- **Typical occupant load:** 15 net sq ft per person (≈1.4 m²/person) — Assembly tables-and-chairs; standing bar 5 net sq ft (≈0.46 m²/person); kitchen counted at the BOH side as Business 150 gross sq ft per person (per IBC 2021 §1004.5 Table; per IBC 2018 Code & Commentary commercial kitchens not associated with a dining room ≤ 2,500 sq ft can be classified Group B).
+- **Typical occupant load:** 1.4 m²/person — assembly tables-and-chairs; standing bar 0.65 m² net per person; kitchen 9.3 m²/person (per Permen PU 26/PRT/M/2008 Tabel faktor beban hunian; perlu verifikasi).
 - **FOH:BOH ratio:** Neufert restaurant-class kitchen 0.4-0.5 m²/place vs. dining 1.4-1.6 m²/place → BOH ≈ 25-35% of FOH (per Neufert 4th ed., pp. 187-189). Hotel-restaurant FOH/BOH cross-check from Neufert "Hotels": total FOH 7.8-8.2 m² per guest room, BOH kitchen + store 6.3-5.4 m² per guest room (similar order of magnitude — corroborates).
 
 ### retail_boutique
 
-- **Required spaces** (per Neufert 4th ed. "Retail" chapter; IBC §309 M occupancy):
+- **Required spaces** (per Neufert 4th ed. "Retail" chapter):
   - entry / shopfront display window
   - sales floor (display fixtures, circulation)
   - fitting room(s) — for apparel
@@ -96,12 +96,12 @@ Anything outside these six (hotel, school, hospital, factory) is out of scope fo
   - back-of-house: stockroom, receiving, staff break, restroom (staff and/or customer per code)
 - **Adjacency:** entry ↔ sales floor ↔ cash-wrap forms the customer loop, with cash-wrap typically near the exit and sightline-dominant; stockroom directly behind cash-wrap so staff can fetch without leaving the floor; fitting rooms on the sales floor but visually screened.
 - **Floor area range:** No single Neufert global range — Neufert "Retail" classifies typologies (specialized shops, retail chains, supermarkets, department stores). Working band for "boutique" 30-200 m². Anything ≥ ~500 m² migrates into shopping-arcade typology (per Neufert 4th ed., "Retail").
-- **Typical occupant load:** 30 gross sq ft per person (≈2.8 m²/person) for basement and grade-floor mercantile; 60 gross sq ft per person (≈5.6 m²/person) for upper floors; 300 gross sq ft per person (≈27.9 m²/person) for storage/stock/shipping (per IBC 2021 §1004.5 Table; concise summary in usmadesupply.com IBC Chapter 10 reference).
+- **Typical occupant load:** 2.8 m²/person for street-floor sales; 3.7 m²/person where sales occupy two or more street floors; 5.6 m²/person for floors above the street floor (per Permen PU 26/PRT/M/2008 Tabel faktor beban hunian; perlu verifikasi). Storage is not in the reproduced table — take it from the official Permen text.
 - **FOH:BOH ratio:** No canonical Neufert ratio for boutique-scale retail in the surfaced tables; industry rule-of-thumb (per Spacefile "Retail back of house") is 70-80% sales floor / 20-30% BOH (stockroom + back areas) for fashion boutiques. Treat this as guidance, not code.
 
 ### office_small
 
-- **Required spaces** (per Neufert 4th ed. "Administration & Offices" chapter; IBC §304 B occupancy):
+- **Required spaces** (per Neufert 4th ed. "Administration & Offices" chapter):
   - reception / entry
   - workstations (cellular and/or open-plan)
   - meeting room(s) — at least one for ≥ 6 people
@@ -113,7 +113,7 @@ Anything outside these six (hotel, school, hospital, factory) is out of scope fo
   - storage / archive
 - **Adjacency:** reception is the public face — visitors should not pass through workstations to reach a meeting room; place meeting rooms near reception so visitor traffic is contained. Workstation cluster forms the private-side; restrooms and print rooms accessible from the workstation cluster but not from reception alone.
 - **Floor area range:** Neufert per-workstation allocation 11-15 m² (typical 13 m²) plus consulting / storage 1.5-4.2 m² (typical 2.5 m²) plus support spaces (sanitary 0.6-0.8, conference 0.3-1.0, archive 0.4-1.0, stores 0.4-1.5, canteen 0.6-1.6, entrance 0.2-0.7) per workstation (per Neufert 4th ed., "Administration & Offices"). For a 10-workstation office: ~150-200 m² total. Open-plan workstation: 12-15 m² per seat (per modern guidance, Flexopus office space guidelines, corroborating Neufert range).
-- **Typical occupant load:** 150 gross sq ft per person (≈13.9 m²/person) for ordinary business areas; 50 net sq ft per person (≈4.65 m²/person) for "concentrated business use" (call centers, trading floors, data centers) per IBC 2021 §1004.8 (per IBC 2021 §1004.5 Table; usmadesupply.com summary).
+- **Typical occupant load:** 9.3 m²/person for business areas (per Permen PU 26/PRT/M/2008 Tabel faktor beban hunian; perlu verifikasi); meeting rooms at the 1.4 m²/person assembly factor.
 - **FOH:BOH ratio:** Not a meaningful framing for offices — instead use Neufert workstation:support ratio. Workstation area ≈ 60-65% of net floor; support (meeting, archive, kitchenette, circulation, sanitary) ≈ 35-40% (derived from Neufert per-workstation allocation table).
 
 ## Cross-cutting adjacency principles
@@ -158,7 +158,7 @@ Cross-reference: `discovery.md` defines the canonical space-type slugs; the scaf
 
 ## Worked examples
 
-**Example 1 — Small speakeasy / shisha lounge:** A 6-zone speakeasy lounge, total floor area ≈ 90 m². Project type: `cafe_lounge`. Required spaces from this chapter: entry, counter, seating, restroom, BOH (when an existing back kitchen is preserved, BOH is "skinned" rather than rebuilt). FOH:BOH per Neufert ≈ 80:20, which typically matches existing footprints. Occupant load at IBC 15 net sq ft / person → ~50 m² FOH ÷ 1.4 m²/person ≈ 35 occupants — below the 50-occupant A-2 threshold so the local AHJ may permit Group B classification (verify on site).
+**Example 1 — Small speakeasy / shisha lounge:** A 6-zone speakeasy lounge, total floor area ≈ 90 m². Project type: `cafe_lounge`. Required spaces from this chapter: entry, counter, seating, restroom, BOH (when an existing back kitchen is preserved, BOH is "skinned" rather than rebuilt). FOH:BOH per Neufert ≈ 80:20, which typically matches existing footprints. Occupant load ~50 m² FOH ÷ 1.4 m²/person ≈ 35 occupants (per Permen PU 26/PRT/M/2008 Tabel faktor beban hunian; perlu verifikasi); provide at least 2 exits.
 
 **Example 2 — 2-bedroom apartment, 70 m²:** Project type: `residential_apartment`. Per UK NDSS, 2B/4P single-storey minimum 70 m². Spaces from this chapter: entry, combined living-dining, kitchen (open or galley), 2 bedrooms, 1 bathroom, in-unit storage. Apply the Time-Saver three-zone layout: living/dining + kitchen on the public side, two bedrooms + bath on the private side, separated by the entry transition.
 
@@ -167,11 +167,11 @@ Cross-reference: `discovery.md` defines the canonical space-type slugs; the scaf
 - **Kitchen as a corridor.** Designing a residential kitchen so it sits on the through-path between living room and bedrooms forces all household traffic through the cooking zone. Time-Saver explicitly calls out that work areas should be segregated from non-working areas (per Time-Saver, "Kitchen/Eating Zone").
 - **No transition zone at the entry.** Front door opening directly onto the sofa or directly into the dining room sacrifices acoustic/visual privacy and HVAC efficiency. Always include a foyer / vestibule, even a 1.5 m² niche.
 - **FOH:BOH ratio inverted.** Treating the kitchen as a "leftover" space after the dining room is sized produces unworkable restaurants. Size BOH to match the seat count using Neufert's m²/place table, not by what's left over.
-- **Occupant load undercounted in commercial.** Designers often count only seated patrons and forget standing zones (bar areas) at the much denser 5 net sq ft/person factor (per IBC 2021 §1004.5). This breaks egress calculations.
+- **Occupant load undercounted in commercial.** Designers often count only seated patrons and forget standing zones (bar areas) at the much denser 0.65 m² net per person factor (per Permen PU 26/PRT/M/2008 Tabel faktor beban hunian; perlu verifikasi). This breaks egress calculations.
 
 ## See also
 
-- [`codes.md`](codes.md) — egress widths, accessibility, and fire-area thresholds keyed to the IBC occupancy group cited above.
+- [`codes.md`](codes.md) — egress widths, accessibility, and occupant-load factors under Indonesian regulations (Permen PU 26/PRT/M/2008, Permen PUPR 14/PRT/M/2017).
 - [`spatial.md`](spatial.md) — clearance rules that apply within each space type's program.
 - [`discovery.md`](discovery.md) — questionnaire that maps user input to a project-type slug from this chapter.
 - `space-types/*.md` — per-space-type chapters (living room, kitchen, bedroom, dining, bar, etc.) referenced in the program lists above.
