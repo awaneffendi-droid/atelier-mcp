@@ -1,6 +1,6 @@
 # Space Type: Restaurant (餐厅 / 全服务餐厅)
 
-> Sources: Neufert *Architects' Data* (4th International English ed., Catering / Restaurant chapter on Scribd; 2nd International English ed. UCEB civbook archive PDF); GB 50034-2013 《建筑照明设计标准》Table 5.2.5 旅馆建筑照明标准值 / Table 5.2.4 餐饮 (gongbiaoku / zlglpt reproductions; Code of China English version); IBC 2021 §303 Assembly Group A-2 and Table 1004.5 Occupant Load (ICC Digital Codes; UpCodes Texas IBC 2021); ISO 3382-2:2008 reverberation-time definition (Rational Acoustics technical note); Commercial Acoustics "Target Reverb Times" reference; WELL Building Standard v2 Comfort §80 reverberation-time targets; Toast "Average Restaurant Square Footage 2026" industry-survey aggregation; CetraRuddy / Cini-Little FOH:BOH ratio guidance reproduced in TotalFood "Technical Know-How of Creating a Restaurant Floor Plan"; Layak Architect "Dining Room Dimensions". Last updated: 2026-04-29.
+> Sources: Neufert *Architects' Data* (4th International English ed., Catering / Restaurant chapter on Scribd; 2nd International English ed. UCEB civbook archive PDF); GB 50034-2013 《建筑照明设计标准》Table 5.2.5 旅馆建筑照明标准值 / Table 5.2.4 餐饮 (gongbiaoku / zlglpt reproductions; Code of China English version); Permen PU 26/PRT/M/2008 Tabel faktor beban hunian (egress chapter as reproduced in the ITB *Manual Sarana Penyelamatan Jiwa*; cross-ref `codes.md`); ISO 3382-2:2008 reverberation-time definition (Rational Acoustics technical note); Commercial Acoustics "Target Reverb Times" reference; WELL Building Standard v2 Comfort §80 reverberation-time targets; Toast "Average Restaurant Square Footage 2026" industry-survey aggregation; CetraRuddy / Cini-Little FOH:BOH ratio guidance reproduced in TotalFood "Technical Know-How of Creating a Restaurant Floor Plan"; Layak Architect "Dining Room Dimensions". Last updated: 2026-04-29.
 
 ## Purpose
 
@@ -15,7 +15,7 @@ A full-service restaurant is a sit-down, table-service eatery where the dining r
 | Fine dining, 80–150 seats | 200–500 m² (2,153–5,382 ft²) | (per Toast "Average Restaurant Square Footage 2026": "fine dining restaurants usually occupy 2,153 to 5,382 square feet") |
 | Banquet / event-driven | 300 m²+ | (per Neufert 4th ed. Catering chapter on banquet-service typology and per CetraRuddy/Cini-Little ratio guidance reproduced in TotalFood floor-plan article) |
 
-Per-seat floor area: a useful sanity check is **1.4–1.8 m² per dining seat** for the dining room alone (≈ 15 net sq ft / person at IBC 2021 Table 1004.5 = 1.39 m²/person, then loosened slightly for service aisles and host-stand) (per IBC 2021 Table 1004.5 unconcentrated tables-and-chairs row reproduced in Dalkita "Understanding Occupant Load" summary; Neufert 4th ed. Catering corroborates 1.4–1.8 m²/seat).
+Per-seat floor area: a useful sanity check is **1.4–1.8 m² per dining seat** for the dining room alone (the less-concentrated assembly factor is 1.4 m²/person, then loosened slightly for service aisles and host-stand) (per Permen PU 26/PRT/M/2008 Tabel faktor beban hunian; perlu verifikasi; Neufert 4th ed. Catering corroborates 1.4–1.8 m²/seat).
 
 ## FOH : BOH split
 
@@ -59,11 +59,11 @@ All values are clear distances between finished furniture / wall faces. Cross-re
 - **Host stand / podium** at the entry — sized for one staff member + reservation system, ≈ 0.8 × 0.5 m (per Neufert 4th ed. Catering entry-zone diagrams).
 - **Wait stations** distributed at one small station per 20 diners or one large central station per 60 diners (per LoopNet floor-plan considerations reproducing industry sizing).
 - **Pass-through / kitchen-line interface** — the operational seam between FOH and BOH; design as a hard architectural element, not a furniture item.
-- **Bar (in full-service venues with alcohol)** — a separate seat count, typically 8–12 stools, with its own occupant-load contribution per IBC 2021 Table 1004.5.
+- **Bar (in full-service venues with alcohol)** — a separate seat count, typically 8–12 stools, with its own occupant-load contribution (standing bar area at the concentrated assembly factor 0.65 m² net per person; per Permen PU 26/PRT/M/2008 Tabel faktor beban hunian; perlu verifikasi).
 
 ### Common
 
-- **Banquettes** along one or two long walls — fixed seating sized at 600 mm per diner of backrest length (per IBC 2021 §1004.6 fixed-seating rule: "24 in (610 mm) of backrest length = 1 person").
+- **Banquettes** along one or two long walls — fixed seating sized at 600 mm per diner of backrest length for comfort, while the occupant load counts 1 person per 455 mm of bench (per Permen PU 26/PRT/M/2008 Tabel faktor beban hunian; perlu verifikasi, bench-seating row).
 - **Servers' computer station / POS terminal** — typically integrated into a wait station.
 - **Acoustic ceiling cloud** or treated wall panels above the dining zone (see "Acoustic targets" below).
 - **Decorative pendant lighting** above each table and a layered ambient field — see "Lighting layer recipe" below.
@@ -116,13 +116,13 @@ Operationalising the recipe:
 | Table-top detail (place setting + glassware) | 50–85 mm | object-centroid + 100–200 mm | Tight crop on plate, glass, candle, linen — proves food-photography readiness and styling density | (per `camera.md` "Detail crop" 50–85 mm; Neufert dining-table per-place 600 × 300–400 mm sets the centroid) |
 | Bar elevation | 24–35 mm | 1.55 (standing) | Bar back-shelf + bottle wall + two stools in foreground | (per `camera.md` "Elevation" lens band; Neufert 4th ed. Catering bar typology) |
 | Banquette long-axis (dining-room atmosphere) | 21–24 mm | 1.20–1.40 | Camera tucked at the banquette end, looking down the row of tables | (per `camera.md` "Corner shot" + Neufert 4th ed. Catering dining-room circulation diagrams) |
-| Plan view (top-down, table count + service flow) | orthographic, top view | n/a | Whole-floor plan with seat count, service aisles, and BOH layout for code review and contractor handoff | (per `render-output.md` plan / elevation deliverable rules; IBC 2021 Table 1004.5 occupant-load documentation) |
+| Plan view (top-down, table count + service flow) | orthographic, top view | n/a | Whole-floor plan with seat count, service aisles, and BOH layout for code review and contractor handoff | (per `render-output.md` plan / elevation deliverable rules; Permen PU 26/PRT/M/2008 occupant-load documentation) |
 
 ## Cross-references
 
 - Aisle and service-route widths sit in [`spatial.md`](../spatial.md) — keep the 900–1200 mm service, 1500–1800 mm main, and 750/1000 mm table-to-wall bands synchronised.
 - Lighting Kelvin-coherence and per-table-pendant conventions live in [`lighting.md`](../lighting.md).
-- IBC §303 Assembly A-2, IBC Table 1004.5 unconcentrated 15 net, IBC §1004.6 fixed-seating 24-in rule, GB 50034-2013 §5.2.5 illuminance, and ISO 3382-2 RT60 definition sit in [`codes.md`](../codes.md).
+- Permen PU 26/PRT/M/2008 occupant-load factors (assembly 1.4 / 0.65 net, kitchen 9.3, bench 455 mm per person) and egress rules sit in [`codes.md`](../codes.md); GB 50034-2013 §5.2.5 illuminance and ISO 3382-2 RT60 definition are covered in `lighting.md` / `acoustics.md`.
 - Standard table / chair / banquette dimensions sit in [`furniture.md`](../furniture.md).
 - Acoustic-treatment surface areas live in [`acoustics.md`](../acoustics.md).
 - Output bundle (AgX, plan-view orthographic export, file-naming) lives in [`render-output.md`](../render-output.md).
@@ -130,10 +130,10 @@ Operationalising the recipe:
 ## Worked examples
 
 **80-seat casual full-service neighbourhood restaurant.**
-Per IBC 2021 Table 1004.5, dining + bar at 15 net sq ft / person = 1.39 m²/person; kitchen at 200 gross sq ft / person = 18.6 m²/person. With 80 seats, dining ≈ 111 m². Apply 60 : 40 FOH : BOH (per CetraRuddy / TotalFood) → BOH ≈ 74 m² → kitchen ≈ 5 ft²/seat × 80 = 37 m² (per BestOfExports rule of thumb), the rest is dish, dry storage, walk-in, staff. Total floor area ≈ **185 m²**. Occupant load = 111/1.39 + 74/18.6 ≈ 80 + 4 ≈ **84 occupants** — well above the 50-occupant threshold, so panic hardware required and 2 exits required (per IBC 2021 §1006 / §1010). RT60 target 0.8 s — install ceiling cloud over dining + fabric banquette backs + one drapery wall + rug under the densest cluster (per Commercial Acoustics target reverb times). Ambient 100 lx, 2400 K (per GB 50034-2013 Table 5.2.5 西餐厅) + per-table pendants at 250 lx on the placemat (mixed-lighting under GB 50034-2013 §3.3).
+Per Permen PU 26/PRT/M/2008, dining at the less-concentrated assembly factor 1.4 m²/person; kitchen/BOH at 9.3 m²/person (per Permen PU 26/PRT/M/2008 Tabel faktor beban hunian; perlu verifikasi). With 80 seats, dining ≈ 111 m². Apply 60 : 40 FOH : BOH (per CetraRuddy / TotalFood) → BOH ≈ 74 m² → kitchen ≈ 5 ft²/seat × 80 = 37 m² (per BestOfExports rule of thumb), the rest is dish, dry storage, walk-in, staff. Total floor area ≈ **185 m²**. Occupant load = 111/1.4 + 74/9.3 ≈ 79 + 8 ≈ **87 occupants** — at least 2 exits required (per Permen PU 26/PRT/M/2008; cross-ref `codes.md`). RT60 target 0.8 s — install ceiling cloud over dining + fabric banquette backs + one drapery wall + rug under the densest cluster (per Commercial Acoustics target reverb times). Ambient 100 lx, 2400 K (per GB 50034-2013 Table 5.2.5 西餐厅) + per-table pendants at 250 lx on the placemat (mixed-lighting under GB 50034-2013 §3.3).
 
 **40-seat fine-dining tasting-menu venue.**
-Dining ≈ 56 m² + bar / lounge 20 m² = 76 m² FOH; kitchen ≈ 5 ft²/seat × 40 = 19 m²; FOH:BOH at 60:40 wants BOH ≈ 50 m² so add prep, walk-in, dish, staff for ≈ 31 m² beyond the cooking line. Total ≈ **126 m²**. Occupant load = 76/1.39 + 50/18.6 ≈ 55 + 3 ≈ **58 occupants** — still above the 50-occupant threshold, panic hardware + 2 exits (per IBC 2021 §1006). RT60 target 0.7 s, room volume ≤ 280 m³ → push toward < 0.6 s for the WELL-aligned premium tier (per WELL v2 Comfort §80). Ambient designer-adjusted to ~ 50 lx, 2200–2400 K (per GB 50034-2013 §3.3 grade reduction documented on the lighting plan) + per-table pendants at 200 lx on the place setting.
+Dining ≈ 56 m² + bar / lounge 20 m² = 76 m² FOH; kitchen ≈ 5 ft²/seat × 40 = 19 m²; FOH:BOH at 60:40 wants BOH ≈ 50 m² so add prep, walk-in, dish, staff for ≈ 31 m² beyond the cooking line. Total ≈ **126 m²**. Occupant load = 76/1.4 + 50/9.3 ≈ 54 + 5 ≈ **60 occupants** — at least 2 exits (per Permen PU 26/PRT/M/2008 Tabel faktor beban hunian; perlu verifikasi). RT60 target 0.7 s, room volume ≤ 280 m³ → push toward < 0.6 s for the WELL-aligned premium tier (per WELL v2 Comfort §80). Ambient designer-adjusted to ~ 50 lx, 2200–2400 K (per GB 50034-2013 §3.3 grade reduction documented on the lighting plan) + per-table pendants at 200 lx on the place setting.
 
 ## Common mistakes
 
@@ -141,5 +141,5 @@ Dining ≈ 56 m² + bar / lounge 20 m² = 76 m² FOH; kitchen ≈ 5 ft²/seat ×
 - **Single ambient lighting layer, no per-table pendant.** Reads as cafeteria; fine-dining venues must use the §3.3 mixed-lighting layering (per GB 50034-2013 §3.3 mixed-lighting principle).
 - **Tables jammed at 500 mm table-to-wall.** The chair alone needs 500 mm, leaving zero clearance for entry / exit; Neufert sets the floor at 750 mm chair-only and 1000 mm with service traffic (per Neufert 4th ed. Catering wall-clearance rule).
 - **Kitchen sized below 5 ft² / seat in a full-service operation.** Producers stack tickets, plates miss windows, ticket times balloon — the dining room turns into a complaint queue (per BestOfExports kitchen-sizing rule of thumb; CetraRuddy / TotalFood 60:40 rationale).
-- **Failing to count the bar separately in the occupant load.** The IBC 2021 Table 1004.5 row that applies to bar standing area is 5 net sq ft / person — much denser than the 15 net dining row. Skipping the separate calc under-counts egress requirements (per IBC 2021 Table 1004.5 standing-space row).
-- **Treating fixed banquettes as movable seating.** IBC 2021 §1004.6 counts banquette by 24 in (610 mm) of backrest length per occupant — a 3 m banquette = 5 occupants, not "as many as fit" (per IBC 2021 §1004.6 fixed-seating rule).
+- **Failing to count the bar separately in the occupant load.** Standing bar area uses the concentrated assembly factor 0.65 m² net per person — much denser than the 1.4 m² dining factor. Skipping the separate calc under-counts egress requirements (per Permen PU 26/PRT/M/2008 Tabel faktor beban hunian; perlu verifikasi).
+- **Treating fixed banquettes as movable seating.** Bench seating counts 1 occupant per 455 mm — a 3 m banquette = 6 occupants, not "as many as fit" (per Permen PU 26/PRT/M/2008 Tabel faktor beban hunian; perlu verifikasi, bench-seating row).

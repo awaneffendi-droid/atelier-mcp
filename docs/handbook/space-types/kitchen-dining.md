@@ -58,7 +58,7 @@ All values are clear distances between finished surfaces. Cross-referenced with 
 | Table height | 710–810 (28–32 in) | (per Dimensions.com "Dining Room Clearances": "Table Height: 28–32 in (71–81 cm)") |
 | Seat height | 460–510 (18–20 in) | (per Dimensions.com "Dining Room Clearances": "Seat Height: 18–20 in (46–51 cm)") |
 | Table → seat top vertical clearance (lap room) | 250–300 | (per Civil Tutorials dining-table sizing summarising Time-Saver Standards: "10–12 in / 25–30 cm between seat top and underside of tabletop") |
-| Accessible turning circle in eat-in dining | 1525 (60 in) ø | (per ADA 2010 §304.3.1 / GB 50763-2012 §3.5.3 item 4 1.50 m turning circle; cross-ref `codes.md`) |
+| Wheelchair circulation in eat-in dining | ≥ 1100 between table/bed edge and wall; ≥ 920 accessible path | (cf. Permen PUPR 14/PRT/M/2017 Lampiran III 12.8 bed-to-wall 110 cm and Lampiran II A.3.a; cross-ref `codes.md`) |
 
 Standard dining-table footprints used for clearance arithmetic: **4-seat rectangular ≈ 1200 × 750 mm**; **6-seat rectangular 1800 × 900 mm**; **8-seat rectangular 2400 × 1000 mm**; **4-seat round Ø 1100 mm**; **6-seat round Ø 1400–1500 mm**; **8-seat round Ø 1800 mm** (per Living Cozy / Home Stratosphere dining-table sizing summarising Time-Saver Standards and Neufert 60 cm per-person rule).
 

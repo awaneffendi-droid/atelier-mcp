@@ -10,7 +10,7 @@ This handbook is the **source of truth** for design knowledge consumed by the In
 
 ### Core knowledge chapters
 
-- [`codes.md`](codes.md) — Building codes: China GB safety / accessibility / fire egress + ADA reference
+- [`codes.md`](codes.md) — Building codes: Indonesian accessibility (Permen PUPR 14/PRT/M/2017) and fire egress (Permen PU 26/PRT/M/2008), plus hospital notes (Permenkes 6/2026)
 - [`lighting.md`](lighting.md) — Layered lighting: Kelvin ranges, Lux targets, fixture spacing
 - [`spatial.md`](spatial.md) — Clearances, circulation, ergonomics, eye-level
 - [`materials.md`](materials.md) — PBR principles, color theory, finish adjacency
@@ -28,7 +28,7 @@ Located under `styles/`. Each style chapter cites real named projects and named 
 
 ### Space-type chapters (one per space type)
 
-Located under `space-types/`. Each space-type chapter cites the relevant code section (GB / IBC / Neufert) for clearances and dimensions.
+Located under `space-types/`. Each space-type chapter cites the relevant code section (Indonesian regulations via `codes.md`, GB for lighting/acoustics comparison values, Neufert for design clearances) for clearances and dimensions.
 
 ## Citation format
 

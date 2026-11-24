@@ -1,6 +1,6 @@
 # Space Type: Cafe / Lounge (咖啡馆 / 休闲餐饮)
 
-> Sources: Neufert *Architects' Data* (4th International English ed., Internet Archive PDF, restaurants / catering chapter, pp. 187–189; ResearchGate "Restaurant space requirements" reproduction); Time-Saver Standards for Building Types (McGraw-Hill, restaurant / cafe / kitchen sections pp. 755–768, archived on arc213.files.wordpress.com); GB 50034-2013 《建筑照明设计标准》§5.3 / Table 5.x for 餐饮建筑 (Wosen LED / Recolux / Casyoo summaries; cross-ref `lighting.md`); GB 50016-2014 (2018 amendment) 《建筑设计防火规范》§5.5.17 (egress for "其他建筑" public-building rows; cross-ref `codes.md`); GB 50763-2012 《无障碍设计规范》§3.5 / §3.7 (cross-ref `codes.md`); ADA 2010 Standards for Accessible Design §403 / §902 (Access-Board publication); ISO 3382-2:2008 §3.1 (RT60 definition; summarised on commercial-acoustics.com and ddsacoustical.com); Rindel "Suggested acoustical requirements for restaurants, canteens, and cafeterias" (BNAM 2018, paper C142 on odeon.dk); Acoustic Bulletin "The Lombard effect in hospitality"; WELL Building Standard "Reverberation Time" feature; Toast POS "Average Restaurant Square Footage" (per-seat sizing); Hospitality.Institute "Back of House Food Production Planning Guide" (FOH/BOH ratios); Dimensions.com "Dining Room Clearances".
+> Sources: Neufert *Architects' Data* (4th International English ed., Internet Archive PDF, restaurants / catering chapter, pp. 187–189; ResearchGate "Restaurant space requirements" reproduction); Time-Saver Standards for Building Types (McGraw-Hill, restaurant / cafe / kitchen sections pp. 755–768, archived on arc213.files.wordpress.com); GB 50034-2013 《建筑照明设计标准》§5.3 / Table 5.x for 餐饮建筑 (Wosen LED / Recolux / Casyoo summaries; cross-ref `lighting.md`); Permen PU 26/PRT/M/2008 egress chapter (occupant load and travel distance; cross-ref `codes.md`); Permen PUPR 14/PRT/M/2017 Persyaratan Kemudahan Bangunan Gedung, Lampiran II–III (cross-ref `codes.md`); ISO 3382-2:2008 §3.1 (RT60 definition; summarised on commercial-acoustics.com and ddsacoustical.com); Rindel "Suggested acoustical requirements for restaurants, canteens, and cafeterias" (BNAM 2018, paper C142 on odeon.dk); Acoustic Bulletin "The Lombard effect in hospitality"; WELL Building Standard "Reverberation Time" feature; Toast POS "Average Restaurant Square Footage" (per-seat sizing); Hospitality.Institute "Back of House Food Production Planning Guide" (FOH/BOH ratios); Dimensions.com "Dining Room Clearances".
 > Last updated: 2026-04-29
 
 ## Purpose
@@ -23,7 +23,7 @@ Cafe sizing is driven by **seat count × per-seat allocation**, then split FOH (
 
 A 24-seat casual cafe therefore wants ≈ 24 × 1.4 = **34 m² FOH** plus ≈ 24 × 0.46 = **11 m² BOH** plus restroom + storage = total **≈ 50–60 m² gross**. Below 30 m² the Neufert per-seat rule loses validity (per Neufert restaurant chapter) — switch to a furniture-layout-driven plan and let table count fall out of the layout.
 
-GB 50016-2014 §5.5.17 also caps **any-point-to-nearest-exit travel distance** for restaurant/cafe spaces (Class I/II fire resistance, ≥ 2 exits) at **30 m straight-line** (per GB 50016-2014 §5.5.17 item 4 large-room special rule; +25 % uplift if sprinklered per Note 3; cross-ref `codes.md`).
+On an Indonesian site, egress (minimum 2 exits, occupant load at 1.4 m²/person for tables and chairs) follows Permen PU 26/PRT/M/2008 (per `codes.md`; perlu verifikasi of the assembly travel-distance row). For comparison, GB 50016-2014 §5.5.17 caps **any-point-to-nearest-exit travel distance** for restaurant/cafe spaces (Class I/II fire resistance, ≥ 2 exits) at **30 m straight-line** (per GB 50016-2014 §5.5.17 item 4 large-room special rule; +25 % uplift if sprinklered per Note 3; cross-ref `codes.md`).
 
 ## Required clearances
 
@@ -47,10 +47,10 @@ All values are clear distances between finished furniture / wall faces. Cross-re
 | Bar stool seat height (matched to 1100 mm bar) | 760 (30 in) | (per Time-Saver Standards bar-detail p. 765 stool-detail figures) |
 | Counter aisle behind bar (single staff) | ≥ 900 | (per Neufert *Architects' Data* bar / counter section p. 188; corroborates NKBA Kitchen Planning Guidelines work-aisle parallel) |
 | Counter aisle behind bar (multi-staff) | ≥ 1200 | (per Neufert *Architects' Data* bar / counter section p. 188; corroborates NKBA work-aisle multi-cook 1219 mm) |
-| Accessible route through seating area | ≥ 915 (36 in) clear | (per ADA 2010 §403.5 / GB 50763-2012 §3.5.1: "≥ 1.20 m" indoor accessible passage; cross-ref `codes.md`) |
-| Accessible turning circle, where required | 1525 (60 in) ø | (per ADA 2010 §304.3.1; GB 50763-2012 §3.5.3 item 4; cross-ref `codes.md`) |
-| Counter-service accessible counter section | ≥ 915 mm wide at ≤ 865 mm height | (per ADA 2010 §904.4 sales-and-service-counter clauses; corroborated by GB 50763-2012 §3.5.1 item 3 wheelchair-counter ≥ 900 mm) |
-| Travel distance any-seat → nearest exit (large public room) | ≤ 30 m straight-line (Class I/II, ≥ 2 exits) | (per GB 50016-2014 §5.5.17 item 4; +25 % if sprinklered per Note 3; cross-ref `codes.md`) |
+| Accessible route through seating area | ≥ 920 clear (one wheelchair user); ≥ 1520 where a pedestrian must pass | (per Permen PUPR 14/PRT/M/2017 Lampiran II A.3.a; cross-ref `codes.md`) |
+| Wheelchair manoeuvring space at doors | 1525 × 1525 inside / 1700 × 1700 outside | (per Permen PUPR 14/PRT/M/2017 Lampiran II A.1.a.6–7; cross-ref `codes.md`) |
+| Counter-service accessible counter section | lowered section for wheelchair users; height not set numerically in the national accessibility regulation | (cf. Permen PUPR 14/PRT/M/2017 Lampiran III — confirm with the PBG reviewer; perlu verifikasi) |
+| Travel distance any-seat → nearest exit | Indonesian assembly row of Permen PU 26/PRT/M/2008 (perlu verifikasi); GB comparison ≤ 30 m straight-line | (per `codes.md`; cf. GB 50016-2014 §5.5.17 item 4 comparison) |
 
 Standard cafe-table footprints used for clearance arithmetic: **2-seat 700 × 700 mm**; **2-seat round Ø 700 mm**; **4-seat 1200 × 700 mm**; **4-seat round Ø 1100 mm**; **6-seat 1800 × 800 mm**; **bar / high-top 4-seat 1500 × 700 mm at 1100 mm height** (per Time-Saver Standards restaurant-seating p. 759 and Neufert restaurant chapter p. 187; corroborated by Civil Tutorials dining tables summary).
 
@@ -60,8 +60,8 @@ Standard cafe-table footprints used for clearance arithmetic: **2-seat 700 × 70
 
 - **Seated FOH tables** sized 2-seat / 4-seat with the per-person 600 mm and table-depth 700 mm bands (per Neufert restaurant chapter); per-seat allocation 1.4 m² (15 ft²) FOH (per Toast POS).
 - **Service counter / bar** delivering customer order + payment + (optionally) seated bar service. Customer-side stool spacing 600 mm, counter top 1050–1150 mm AFF (per Time-Saver Standards bar p. 765). Behind-bar staff aisle ≥ 900 mm single-staff (per Neufert p. 188).
-- **At least one accessible seated table** with the ADA §902 accessible-table clearance and 1525 mm turning circle reachable from the entry route (per ADA 2010 §902 / GB 50763-2012; cross-ref `codes.md`).
-- **Two egress exits** for any cafe whose layout pushes a seat past the 30 m straight-line travel distance to a single exit (per GB 50016-2014 §5.5.17; cross-ref `codes.md`).
+- **At least one accessible seated table** reachable from the entry route along a ≥ 920 mm accessible path (per Permen PUPR 14/PRT/M/2017 Lampiran II A.3.a; cross-ref `codes.md`).
+- **Two egress exits** as the Indonesian minimum (per Permen PU 26/PRT/M/2008; cross-ref `codes.md`).
 - **BOH prep counter + sink + cold storage** sized to ≥ 5 ft² (0.46 m²) per FOH seat (per Toast POS / Time-Saver Standards kitchen p. 768).
 
 ### Common
@@ -74,7 +74,7 @@ Standard cafe-table footprints used for clearance arithmetic: **2-seat 700 × 70
 ### Optional
 
 - **Dedicated reading / lounge zone** with sofa + low table (cafe-lounge hybrid) — sized using `space-types/living-room.md` sofa-cluster clearances (per Layak Architect / Castlery layout rules cross-referenced in living-room chapter). Drops table count by 2–3 in exchange for dwell time.
-- **Outdoor terrace / sidewalk seating** — per local AHJ patio rules; GB / IBC do not directly regulate but the FOH:BOH ratio and §5.5.17 travel distances still apply when outdoor seats count toward occupancy.
+- **Outdoor terrace / sidewalk seating** — per kabupaten/kota rules and the PBG review; the FOH:BOH ratio and Permen PU 26/PRT/M/2008 travel distances still apply when outdoor seats count toward occupancy.
 - **Live-music / DJ corner** — adds an acoustic load that must be reconciled with the RT60 target below (per Acoustic Bulletin "The Lombard effect in hospitality"; Rindel BNAM 2018 paper §3 restaurant classification on odeon.dk).
 - **Retail merchandise display** (beans, mugs) — reads as wayside fixture; sized per Time-Saver Standards retail counter p. 765.
 
@@ -118,7 +118,7 @@ Default render bundle for a cafe / lounge hero deliverable. Lens / height bands 
 
 ## Cross-references
 
-- Public-building egress rules (GB 50016-2014 §5.5.17 large-room special) and accessibility (GB 50763-2012 §3.5 / §3.7) live in [`codes.md`](../codes.md).
+- Egress (Permen PU 26/PRT/M/2008) and accessibility (Permen PUPR 14/PRT/M/2017) live in [`codes.md`](../codes.md).
 - Table-to-wall, table-to-table, and bar-aisle clearances also live in [`spatial.md`](../spatial.md).
 - Hospitality Kelvin (2700–3500 K) and lux ranges (lounge 100–300 lx, restaurant ambient 50–100 lx) live in [`lighting.md`](../lighting.md).
 - Standard cafe-table, chair, bar-stool, banquette dimensions live in [`furniture.md`](../furniture.md).
@@ -138,8 +138,8 @@ Below the Neufert 100 m² per-seat-formula validity threshold (per Neufert resta
 ## Common mistakes
 
 - **Sizing a cafe with a "heads × m²" formula below 100 m².** Neufert's restaurant chapter explicitly invalidates this approach for small rooms (per Neufert *Architects' Data* on ResearchGate: "the design of dining rooms based on 'number of heads = m²' formulas is to be avoided, as they are not applicable to rooms under 100 m²"). Use furniture-layout-driven sizing and let seat count fall out of the layout.
-- **Forgetting the GB 50016-2014 §5.5.17 30 m travel cap.** The large-room special rule applies to any cafe / restaurant Class I/II fire-resistance public room — any-point-to-nearest-exit straight-line distance must be ≤ 30 m (per GB 50016-2014 §5.5.17 item 4; cross-ref `codes.md`). Cafes deeper than ~ 20 m almost always need a second egress.
-- **Single accessible route blocked by a chair-back.** ADA 2010 §403.5 requires a continuous 915 mm clear accessible route (per `codes.md`); a chair pulled out into the route trips it. Either widen the route to ≥ 1100 mm to absorb chair-back protrusion or fix the chair position with floor-mounted bases.
+- **Forgetting the travel-distance limit.** Check every seat against the assembly travel-distance limit in Permen PU 26/PRT/M/2008 (per `codes.md`; perlu verifikasi). Cafes deeper than ~ 20 m almost always need a second egress.
+- **Single accessible route blocked by a chair-back.** Permen PUPR 14/PRT/M/2017 Lampiran II A.3.a requires at least 920 mm for one wheelchair user (per `codes.md`); a chair pulled out into the route trips it. Either widen the route to ≥ 1100 mm to absorb chair-back protrusion or fix the chair position with floor-mounted bases.
 - **Cool-white (≥ 4000 K) ambient.** Pushes the cafe out of the hospitality 2700–3500 K band into the office band (per `lighting.md` Kelvin-by-space-type table) — kills the lounge-warmth read and reduces dwell time. Lock to 2700–3500 K.
 - **Hard surfaces everywhere, no acoustic treatment.** Concrete floor + glass front + bare ceiling + hard tables produces RT60 well above 1.0 s — triggers the Lombard effect (per Acoustic Bulletin "The Lombard effect in hospitality": "spaces with RT60 < 0.7 s perform significantly better"). Always specify ceiling absorption + one absorptive wall + upholstered seating to land in the 0.4–0.6 s RT60 band (per Rindel BNAM 2018; cross-ref `acoustics.md`).
 - **Per-table pendant too high.** Above 900 mm over the table the lux drops below the GB 50034-2013 餐厅 150 lx target (per Wosen LED summary) and the shade reads as ceiling clutter. Lock to 800–900 mm above table top.
